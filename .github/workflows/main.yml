@@ -23,15 +23,8 @@ jobs:
         run: npm run dist
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: loja-ri-telemensagens-installer
-          path: dist/*.exe
-
-        run: npm run dist
-
-      - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
           name: loja-ri-telemensagens-installer
+          path: dist/*.exe-ri-telemensagens-installer
           path: dist/*.exe
